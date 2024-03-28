@@ -21,7 +21,7 @@ def main():
 
 @st.cache(show_spinner=False)
 def get_file_content_as_string(path):
-    url = '' + path #put here path
+    url = 'https://github.com/apuu/-speech-emotion-recogntion-' + path #put here path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
     
